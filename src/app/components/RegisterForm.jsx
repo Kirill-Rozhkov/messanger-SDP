@@ -4,7 +4,7 @@ import { validator } from "../utils/validator"
 
 const RegisterForm = () => {
 	const [data, setData] = useState({
-		userName: "",
+		Username: "",
 		password: "",
 		repeatedPassword: "",
 		phone: "",
@@ -32,9 +32,9 @@ const RegisterForm = () => {
 	}
 
 	const validatorConfig = {
-		userName: {
+		Username: {
 			isRequired: {
-				message: "userName is required",
+				message: "Username is required",
 			},
 		},
 		password: {
@@ -72,12 +72,12 @@ const RegisterForm = () => {
 	return (
 		<form className="from-data-container" onSubmit={handleSubmit}>
 			<TextField
-				label={"userName"}
-				value={data.userName}
-				name={"userName"}
-				placeholder={"Enter the userName"}
+				label={"Username"}
+				value={data.Username}
+				name={"Username"}
+				placeholder={"Enter the Username"}
 				onChange={handleChange}
-				error={errors.userName}
+				error={errors.Username}
 			/>
 			<TextField
 				label={"Password"}

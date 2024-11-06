@@ -4,7 +4,7 @@ import { validator } from "../utils/validator"
 
 const LoginForm = () => {
 	const [data, setData] = useState({
-		userName: "",
+		Username: "",
 		password: "",
 	})
 	const [errors, setErrors] = useState({})
@@ -33,9 +33,9 @@ const LoginForm = () => {
 	}
 
 	const validatorConfig = {
-		userName: {
+		Username: {
 			isRequired: {
-				message: "userName is required",
+				message: "Username is required",
 			},
 		},
 		password: {
@@ -48,12 +48,12 @@ const LoginForm = () => {
 	return (
 		<form className="from-data-container" onSubmit={handleSubmit}>
 			<TextField
-				label={"userName"}
-				value={data.userName}
-				name={"userName"}
-				placeholder={"Enter the userName"}
+				label={"Username"}
+				value={data.Username}
+				name={"Username"}
+				placeholder={"Enter the Username"}
 				onChange={handleChange}
-				error={errors.userName}
+				error={errors.Username}
 			/>
 			<TextField
 				label={"Password"}

@@ -1,6 +1,82 @@
 .main-container {
 	display: flex;
 	flex-direction: row;
+	position: relative;
 	height: 100%;
 	width: 100%;
+}
+
+.main-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 20px 40px;
+}
+
+.logout-button {
+	padding: 15px 20px;
+	background-color: rgb(217, 0, 0);
+	color: white;
+	border-radius: 15px;
+	font-size: 18px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.logout-button:hover {
+	background-color: rgb(193, 0, 0);
+}
+
+.add-chat-button {
+	padding: 15px 20px;
+	background-color: #4caf50;
+	color: white;
+	border-radius: 15px;
+	font-size: 18px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.add-chat-button:hover {
+	background-color: #45a049;
+}
+
+.chat-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.chats-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 80%;
+	width: 600px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: rgb(0, 149, 255);
+	overflow-y: scroll;
+}
+
+.chat-bar {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 0px;
+	align-items: center;
+	font-size: 24px;
+	width: 400px;
+	border-bottom: 1px solid rgb(0, 87, 149);
+	cursor: pointer;
+	color: white;
+}
+
+.chat-bar:hover {
+	background-color: rgb(0, 135, 255);
+	cursor: pointer;
 }

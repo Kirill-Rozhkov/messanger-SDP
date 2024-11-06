@@ -7,6 +7,7 @@ import Main from "./app/components/layouts/Main"
 import Login from "./app/components/layouts/Login"
 import { ToastContainer } from "react-toastify"
 import AppLoader from "./app/hoc/AppLoader"
+import ChatPage from "./app/components/ChatPage"
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<Switch>
 				<Route component={Main} path="/" exact />
 				<Route component={Login} path="/login/:type?" />
+				<Route component={ChatPage} path="/:userNmae?" />
 				<Redirect to="/" />
 			</Switch>
 			{/* </AppLoader> */}
