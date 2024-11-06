@@ -1,0 +1,15 @@
+.text-filed {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.text-filed label {
+	font-size: 18px;
+}
+
+.text-filed input {
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
