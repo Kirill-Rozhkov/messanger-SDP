@@ -16,7 +16,7 @@ function App() {
 			<Switch>
 				<Route component={Main} path="/" exact />
 				<Route component={Login} path="/login/:type?" />
-				<Route component={ChatPage} path="/:userNmae?" />
+				<Route component={ChatPage} path="/:userName?" />
 				<Redirect to="/" />
 			</Switch>
 			{/* </AppLoader> */}

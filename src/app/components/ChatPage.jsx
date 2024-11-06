@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import { useParams } from "react-router-dom/cjs/react-router-dom.min"
 
 const ChatPage = () => {
-	const { userName } = useParams()
+	const data = useParams()
+	const [messages, setMessages] = useState([])
 
-	return <div className="chat-page">{userName}</div>
+	return <div className="chat-page"></div>
 }
 
 export default ChatPage
