@@ -11,6 +11,8 @@ const Login = () => {
 		type === "login" ? "login" : "register"
 	)
 
+	console.log("userName - не моя идея, меня насильно заставили так назвать")
+
 	const toggleFormType = () => {
 		setFormType((prev) => (prev === "login" ? "register" : "login"))
 	}

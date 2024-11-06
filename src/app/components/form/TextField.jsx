@@ -1,9 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "../../css/TextField.css"
+import "../../css/form/TextField.css"
 
-const TextField = ({ label, value, name, placeholder, onChange, type }) => {
+const TextField = ({
+	label,
+	value,
+	name,
+	placeholder,
+	onChange,
+	type,
+	error,
+}) => {
 	const handleChange = ({ target }) => {
 		onChange({ name: target.name, value: target.value })
 	}
@@ -18,6 +26,7 @@ const TextField = ({ label, value, name, placeholder, onChange, type }) => {
 				placeholder={placeholder}
 				onChange={handleChange}
 			/>
+			{error && <span className="error">{error}</span>}
 		</div>
 	)
 }
@@ -28,6 +37,7 @@ TextField.propTypes = {
 	name: PropTypes.string.isRequired,
 	type: PropTypes.string,
 	placeholder: PropTypes.string,
+	error: PropTypes.string,
 }
 
 TextField.defaultProps = {
